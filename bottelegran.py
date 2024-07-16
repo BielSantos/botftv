@@ -9,7 +9,15 @@ duplas = []
 # Entrada de Dados: Tela para inserir as duplas
 @bot.message_handler(commands=["opcao1"])
 def opcao1(mensagem):
-    pass
+    while True:
+        nome_dupla1 = input("Digite o nome da dupla 1: ")
+        nome_dupla2 = input("Digite o nome da dupla 2: ")
+        dupla = (nome_dupla1, nome_dupla2)
+        duplas.append(dupla)
+        resposta = input("Deseja adicionar outra dupla? (s/n): ")
+        if resposta.lower() != "s":
+            break
+    return duplas
 
 
 @bot.message_handler(commands=["opcao2"])
