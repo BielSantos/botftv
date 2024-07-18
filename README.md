@@ -10,3 +10,11 @@ Estrutura do App/Bot
 - Exibição do Próximo Jogo: Bot mostrar as próximas duplas a jogar a partir dos resultados anteriores.
 - Gerenciamento de Duplas: Função para adicionar, remover e reorganizar duplas.
 
+
+Api utilizada:
+
+pyTelegramBotAPI
+
+https://pypi.org/project/pyTelegramBotAPI/
+
+Intalação: pip install pyTelegramBotAPI
